@@ -1,57 +1,227 @@
 body{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    background-color: #F2F5F7;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
-header{ 
-    padding: 5vh;
+
+header .container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cabeçalhoPrincipal {
+    background-color: #FFF;
+}
+
+.cabeçalhoPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabeçalhoPrincipal-nav {
+    display: flex;
+    margin: 10px;
+}
+
+.cabeçalhoPrincipal-nav-link {
+    padding: 10px;
+    margin: 10px;
+    color: #9799A6;
+    background-color: #FFF;
+    text-decoration: none;
+    transition: .5s;
+    display: block;
+
+    border-radius: 5px;
+    border: 1px solid #9799A6;
+}
+
+.cabeçalhoPrincipal-nav-link:hover{
+    color: #FFF;
+    background-color: #9799A6;
 }
 .logo{
     margin-top: 20px;
-    margin-left: -100vh;
-    width: 10vw;    
-}
-nav{
-	position: absolute;
-	top: 110px;
-	right: 50px;
+    margin-left: 10px;
+    width: 100px;
 }
 
-ul{
-    display: inline-block;
-    vertical-align: top;
-    
-}
-
-li{
-    position: relative;
-    display: inline;    
-}
-a{
+.cabeçalhoPrincipal-nav-link {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #9799A6;
+    background-color: #FFF;
     text-decoration: none;
-    text-transform: uppercase;
+    transition: .5s;
+    display: block;
 }
-a:hover{
-    font-weight: bolder;
+
+
+.conteudoPrincipal .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tituloPrincipal{
+    font-size: 32px;    
+    color: #00F;
+    text-shadow: -2px -2px 10px #5E9EDC;
     
 }
-main{
+
+.subtitulo{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
     
 }
-.titulo{
-    font-size: 62px;
+
+#campo-localizar{
+    padding: 10px;
+    border: 1px solid #00F;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 300px;
+    transition: .05s; 
 }
-textarea{
-    margin-top: 50px;
-    box-shadow: 1px 1px 5px;
+::placeholder{
+    font-style: italic;
+}
+#campo-localizar:hover{
+    transform: scale(1.05);
+    border-right: 1px solid #00F;
     border-radius: 5px;
-    padding-top: 10px;
 }
-button{
-    box-shadow: 1px 1px 2px;
+
+#submit{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 90px;
+    background-color: #bdd7f3;
+    cursor: pointer;
+    transition: .5s;
+    border:1px solid #00F;
 }
-.dicas{
-    padding: 5vh;
+#submit:active {
+    border: 2px solid #00F;
 }
-footer{
-    padding: 5vh;
+
+#submit:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px #5E9EDC;
+    border-radius: 5px;
+}
+
+#submit:active{
+    box-shadow: 0 0 10px lightgreen;
+}
+
+.resultadoCaixa {    
+    padding: 100px;
+}
+
+#resLeak {
+    transition: .5s;
+    width: 50%;
+    box-shadow: 0 0 20px #F00;
+    border-radius: 10px;
+}
+
+#resOk {
+    transition: .5s;
+    width: 50%;
+    box-shadow: 0px 0px 20px #4DBA7A;
+    border-radius: 10px;
+}
+
+.videoDica{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #5E9EDC;
+    padding: 50px;
+}
+
+.listaDicas {
+    padding: 20px;
+}
+
+.listaDicas-link {
+    margin: 20px;
+    list-style: square inside;
+    content: "\1F512";
+}
+
+.rodapePrincipal {
+    background-color: #324C64;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.rodapePrincipal .subtitulo {
+    color: #FFF;
+}
+
+.rodapePrincipal p {
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+}
+
+.rodapePrincipal-contatoForm {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.redapePrincipal-contatoForm-fieldset {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.rodapePrincipal-contatoForm-legend {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+
+.rodapePrincipal-contatoForm-emailInput{
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #FFF;
+}
+
+.rodapePrincipal-contatoForm-submit{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #4DBA7A;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.rodapePrincipal-contatoForm-emailInput, .rodapePrincipal-contatoForm-submit {
+    outline: 0;
+    border: 1px solid #4DBA7A;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.invisivel {
+	display: none;
+}
+
+table {
+    display: none;
 }

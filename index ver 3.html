@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Como está minha privacidade hoje?</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./image/icon" type="image/x-icon">
+</head>
+<body>
+
+    <header class="cabeçalhoPrincipal">
+        <div class="container">
+            <a href="#">
+                <img class="logo" src="./image/icon" alt="cadeado aberto">
+            </a>
+            
+            <nav class="cabeçalhoPrincipal-nav">                
+                <a class="cabeçalhoPrincipal-nav-link" href="#">Home</a>
+                <a class="cabeçalhoPrincipal-nav-link" href="#">Sobre nós</a>
+                <a class="cabeçalhoPrincipal-nav-link" href="#">Contato</a>
+                <a class="cabeçalhoPrincipal-nav-link" href="#">Donate</a>                
+            </nav>        
+        </div>
+
+    </header>
+
+    <main class="conteudoPrincipal">
+        <div class="container">
+            <h1 class="tituloPrincipal">Fui P\/\/NAD0?</h1>            
+            <p class="subtitulo">Verifique se seu email ou telefone foi vazado</p>            
+            
+            <form class="formulario">
+                <!-- <label for="campo-localizar" name="localizar">Localizar:</label> -->
+                <input id="campo-localizar" name="localizar-input" class="conteudoPrincipal-form-input" placeholder="Digite um e-mail, telefone ou CPF" autofocus>
+                <input id="submit" type="submit" value="Verificar" class="conteudoPrincipal-form-submit"></input>
+            </form>
+        </div>
+
+        <section class="resultadoCaixa">
+            <div id="resLeak" class="container"></div>
+            <div id="resOk" class="container"></div>
+        </section>
+        
+        <section class="videoDica">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JsCs-Y_3F9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <ul class="listaDicas">
+
+                <h2 class="subtitulo">Nossas indicações</h2>
+
+                <li class="listaDicas-link">
+                    Confira dicas de <a href="https://www.youtube.com/playlist?list=PLGWjYaSUpWnnILOdznOSRkJIQs8lTqMRp" target="_blank">cibersegurança.</a> no youtube
+                </li>
+
+                <li class="listaDicas-link">
+                    <a href="https://www.netacad.com/portal/web/self-enroll/m/course-1369746" target="_blank">Inscrição</a> gratuita no curso cibersegurança da CISCO.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="rodapePrincipal">
+        <div class="container">
+            <h3 class="subtitulo">Em desenvolvimento pela Equipe 2</h3>
+            <p>2022.2 eixo 1</p>
+        </div>
+        <form class="rodapePrincipal-contatoForm" action="#">
+            <fieldset>
+                <legend class="rodapePrincipal-contatoForm-legend" for="email-contato">Entre em contato conosco</legend>
+                <div class="redapePrincipal-contatoForm-fieldset">
+                    <input class="rodapePrincipal-contatoForm-emailInput" type="email" name="email-contato" id="email-contato">
+                    <button class="rodapePrincipal-contatoForm-submit" type="submit">Enviar</button>  
+                </div>
+                
+            </fieldset>
+        </form>
+    </footer>
+
+    <script src="./js-teste/dados.js"></script>
+	<script src="./js-teste/script.js"></script>
+	<script src="./js-teste/filtro.js"></script>
+    
+</body>
+</html>
